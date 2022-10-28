@@ -28,7 +28,7 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 
-class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
+class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
@@ -40,257 +40,280 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scaffold(
-        body: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.only(
-                  top: 7,
-                  bottom: 7,
-                  left: 12,
-                  right: 20
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Row(
-                      children: <Widget>[
-                        CircleAvatar(
-                          backgroundImage: AssetImage('assets/images/border.png'),
-                          radius: 33,
-                          child: CircleAvatar(
-                            backgroundColor: Colors.white,
-                            radius: 30,
-                            child: CircleAvatar(
-                              backgroundImage: AssetImage('assets/images/user.JPG'),
-                              radius: 27,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          margin: EdgeInsets.all(10),
-                          child: Text(
-                            'rafiadipramana',
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Icon(Instagram_Icons.more)
-                  ],
-                ),
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+        child: Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.only(top: 7, bottom: 7, left: 12, right: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Image.asset('assets/images/brukakakak.jpg'),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            Icon(Instagram_Icons.like, color: Colors.red, size: 30,),
-                            SizedBox(width: 10,),
-                            Icon(Instagram_Icons.comment, size: 30,),
-                            SizedBox(width: 10,),
-                            Icon(Instagram_Icons.share, size: 30,)
-                          ],
-                        ),
-                        Icon(Instagram_Icons.bookmark, size: 30,)
-                      ],
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(left: 10),
-                    child: Text(
-                      '99999999999999999999 likes',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600
-                      ),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(left: 10,top: 5),
-                    child: Row(
-                      children: <Widget>[
-                        Text(
-                          'rafiadipramana',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600
+                  Row(
+                    children: <Widget>[
+                      CircleAvatar(
+                        backgroundImage: AssetImage('assets/images/border.png'),
+                        radius: 33,
+                        child: CircleAvatar(
+                          backgroundColor: Colors.white,
+                          radius: 30,
+                          child: CircleAvatar(
+                            backgroundImage:
+                                AssetImage('assets/images/user.JPEG'),
+                            radius: 27,
                           ),
                         ),
-                        SizedBox(width: 5),
-                        Text(
-                          'Info Min',
-                          style: TextStyle(
-                            fontSize: 16,
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(left: 10, top: 5, bottom: 10),
-                    child: Text(
-                      '99 YEARS AGO',
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500
                       ),
-                    ),
-                  )
+                      Container(
+                        margin: EdgeInsets.all(10),
+                        child: Text(
+                          'fatkhiyafirda',
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.w500),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Icon(Instagram_Icons.more)
                 ],
               ),
-              Container(
-                padding: EdgeInsets.only(
-                  top: 7,
-                  bottom: 7,
-                  left: 12,
-                  right: 20
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Row(
-                      children: <Widget>[
-                        CircleAvatar(
-                          backgroundImage: AssetImage('assets/images/border.png'),
-                          radius: 33,
-                          child: CircleAvatar(
-                            backgroundColor: Colors.white,
-                            radius: 30,
-                            child: CircleAvatar(
-                              backgroundImage: AssetImage('assets/images/user.JPG'),
-                              radius: 27,
-                            ),
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Image.asset('assets/images/tiga.JFIF'),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Icon(
+                            Instagram_Icons.like,
+                            color: Colors.red,
+                            size: 30,
                           ),
-                        ),
-                        Container(
-                          margin: EdgeInsets.all(10),
-                          child: Text(
-                            'rafiadipramana',
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500
-                            ),
+                          SizedBox(
+                            width: 10,
                           ),
-                        ),
-                      ],
-                    ),
-                    Icon(Instagram_Icons.more)
-                  ],
-                ),
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Image.asset('assets/images/loncat_gak_nih.jpg'),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            Icon(Instagram_Icons.like, color: Colors.red, size: 30,),
-                            SizedBox(width: 10,),
-                            Icon(Instagram_Icons.comment, size: 30,),
-                            SizedBox(width: 10,),
-                            Icon(Instagram_Icons.share, size: 30,)
-                          ],
-                        ),
-                        Icon(Instagram_Icons.bookmark, size: 30,)
-                      ],
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(left: 10),
-                    child: Text(
-                      '1000000000000000000000 likes',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600
+                          Icon(
+                            Instagram_Icons.comment,
+                            size: 30,
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Icon(
+                            Instagram_Icons.share,
+                            size: 30,
+                          )
+                        ],
                       ),
-                    ),
+                      Icon(
+                        Instagram_Icons.bookmark,
+                        size: 30,
+                      )
+                    ],
                   ),
-                  Container(
-                    padding: EdgeInsets.only(left: 10,top: 5),
-                    child: Row(
-                      children: <Widget>[
-                        Text(
-                          'rafiadipramana',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w600
-                          ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 10),
+                  child: Text(
+                    '123 likes',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 10, top: 5),
+                  child: Row(
+                    children: <Widget>[
+                      Text(
+                        'fatkhiyafirda',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.w600),
+                      ),
+                      SizedBox(width: 5),
+                      Text(
+                        'mail lov meimei',
+                        style: TextStyle(
+                          fontSize: 16,
                         ),
-                        SizedBox(width: 5),
-                        Text(
-                          'Acumalaka',
-                          style: TextStyle(
-                            fontSize: 16,
-                          ),
-                        )
-                      ],
-                    ),
+                      )
+                    ],
                   ),
-                  Container(
-                    padding: EdgeInsets.only(left: 10, top: 5),
-                    child: Text(
-                      '99 YEARS AGO',
-                      style: TextStyle(
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 10, top: 5, bottom: 10),
+                  child: Text(
+                    '8 YEARS AGO',
+                    style: TextStyle(
                         color: Colors.grey,
                         fontSize: 12,
-                        fontWeight: FontWeight.w500
+                        fontWeight: FontWeight.w500),
+                  ),
+                )
+              ],
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 7, bottom: 7, left: 12, right: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      CircleAvatar(
+                        backgroundImage: AssetImage('assets/images/border.png'),
+                        radius: 33,
+                        child: CircleAvatar(
+                          backgroundColor: Colors.white,
+                          radius: 30,
+                          child: CircleAvatar(
+                            backgroundImage:
+                                AssetImage('assets/images/user.JPEG'),
+                            radius: 27,
+                          ),
+                        ),
                       ),
-                    ),
-                  )
+                      Container(
+                        margin: EdgeInsets.all(10),
+                        child: Text(
+                          'fatkhiyafirda',
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.w500),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Icon(Instagram_Icons.more)
                 ],
-              )
-            ],
+              ),
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Image.asset('assets/images/lima.JFIF'),
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Icon(
+                            Instagram_Icons.like,
+                            color: Colors.red,
+                            size: 30,
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Icon(
+                            Instagram_Icons.comment,
+                            size: 30,
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Icon(
+                            Instagram_Icons.share,
+                            size: 30,
+                          )
+                        ],
+                      ),
+                      Icon(
+                        Instagram_Icons.bookmark,
+                        size: 30,
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 10),
+                  child: Text(
+                    '123 likes',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 10, top: 5),
+                  child: Row(
+                    children: <Widget>[
+                      Text(
+                        'fatkhiyafirda',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.w600),
+                      ),
+                      SizedBox(width: 5),
+                      Text(
+                        'eh eh ko gt sihh',
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 10, top: 5),
+                  child: Text(
+                    '1 YEARS AGO',
+                    style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w500),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        unselectedItemColor: Colors.black,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Instagram_Icons.home,
+              size: 30,
+            ),
+            label: 'Home',
           ),
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          unselectedItemColor: Colors.black,
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-            items: const <BottomNavigationBarItem>[
-              BottomNavigationBarItem(
-                icon: Icon(Instagram_Icons.home, size: 30,),
-                label: 'Home',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Instagram_Icons.search, size: 30,),
-                label: 'Search',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Instagram_Icons.add, size: 30,),
-                label: 'Reels',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Instagram_Icons.like, size: 30,),
-                label: 'Shop',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(Instagram_Icons.person, size: 30,),
-                label: 'School',
-              ),
-            ],
-          currentIndex: _selectedIndex,
-          selectedItemColor: Colors.black,
-          onTap: _onItemTapped,
-        ),
-      )
-    );
+          BottomNavigationBarItem(
+            icon: Icon(
+              Instagram_Icons.search,
+              size: 30,
+            ),
+            label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Instagram_Icons.add,
+              size: 30,
+            ),
+            label: 'Reels',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Instagram_Icons.like,
+              size: 30,
+            ),
+            label: 'Shop',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Instagram_Icons.person,
+              size: 30,
+            ),
+            label: 'School',
+          ),
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.black,
+        onTap: _onItemTapped,
+      ),
+    ));
   }
 }
-
